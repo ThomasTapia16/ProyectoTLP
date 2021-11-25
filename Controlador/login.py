@@ -2,7 +2,8 @@ from django.core.checks import messages
 from django.shortcuts import render
 from Modelo.models import Funcionario
 
-
+#user gaston.marquez
+#pwd profegaston
 def logging(request):
 
     if request.method == 'POST':
