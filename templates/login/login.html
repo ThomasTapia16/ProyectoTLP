@@ -20,7 +20,8 @@
             </td>
             <td>
                 <div>
-                    <form class = "login">
+                    <form class = "login" method="post">
+                        {% csrf_token %}
                         <label for="username" >Username:</label>
                         <input type="text" id="username" name="username" class = "label">
                         <label for="pwd">Password:</label>
