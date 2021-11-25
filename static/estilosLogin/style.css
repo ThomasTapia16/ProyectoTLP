@@ -3,17 +3,21 @@
     background-color: #EEFFFB;
     width: 600px;
     height: 300px;
-    margin-left: 450px;
+    margin-left: 600px;
     margin-right: 250px;
     margin-top: 130px;
     border-radius: 20px;
-    border: 2px solid #003427;
+    /* border: 2px solid #003427; */
     padding: 20px;
     
 }
+.logo{
+
+    height: 50px;
+}
 .label{
     height: 20px;
-    border: 2px solid #003427;
+    /* border: 2px solid #003427; */
     border-radius: 10px;
 }
 
