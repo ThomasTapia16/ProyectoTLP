@@ -6,4 +6,4 @@
 * Modelo: Carpeta con el archivo models.py, el cual posee la BDD del sistema.
 * templates: Contiene ls carpetas que contienes los archivos html que conforman la vista.
 * static : Carpetas con archivos css o imagenes para el diseño de la vista.
-* grön : Capeta main del sisteam
+* grön : Capeta main del sistema
