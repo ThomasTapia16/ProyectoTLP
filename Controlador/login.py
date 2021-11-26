@@ -2,12 +2,10 @@ from django.core.checks import messages
 from django.http.request import HttpRequest
 from django.shortcuts import render
 from Modelo.models import Funcionario
-from .views import capturaDatos
 #user gaston.marquez
 #pwd profegaston
 
 def logging(request):
-    l = []
     if request.method == 'POST':
         
         try:
@@ -17,7 +15,7 @@ def logging(request):
             funcionario = Funcionario(datosFuncionario.rut,datosFuncionario.usuario,datosFuncionario.contrasena)
             
             
-            return render(request,'login/home.html'),funcionario
+            return render(request,'login/home.html')
             
         except datosFuncionario.DoesNotExist:
             messages.succes(request,'Datos incorrectos, inténta nuevamente.')
@@ -25,4 +23,3 @@ def logging(request):
     #funcActivo = Funcionario(datosFuncionario.rut,datosFuncionario.usuario,datosFuncionario.contrasena)
     return render(request,'login/login.html')
 
-datos = capturaDatos
