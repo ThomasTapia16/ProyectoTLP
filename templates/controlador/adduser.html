@@ -7,6 +7,55 @@
     <title>Add user</title>
 </head>
 <body>
-    
+    <form method="POST">
+        <center>
+            <div class="container">
+                <h1> Pagina de registro Clientes</h1>
+                {% csrf_token %}
+                <table cellpadding="5" cellspacing="2" border="1" >
+                    <thead>
+                        <tr>
+                            <th colspan="2" align="center"> Formulario Registro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td> Rut</td>
+                            <td><input type="text" placeholder="Ingrese Rut" name="rut"></td>
+                        </tr>
+
+                        <tr>
+                            <td> Correo</td>
+                            <td> <input type="Email" placeholder="Ingrese correo" name="correo"> </td>
+                        </tr>
+
+                        <tr>
+                            <td> Nombre</td>
+                            <td><input type="text" placeholder="Ingrese Nombre" name="nombre"></td>
+                        </tr>
+
+                        <tr>
+                            <td> Deuda</td>
+                            <td><input type="number" placeholder="Cantidad Deuda" name="deuda"></td>
+                        </tr>
+
+                        <tr>
+                            <td> Telefono</td>
+                            <td><input type="number" placeholder="Ingrese Telefono" name="telefono"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" aling="center">
+                                <button type="submit">Registrar</button>
+                                &nbsp;&nbsp;
+                                <button type="reset">Borrar</button>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </center>
+</form>
 </body>
 </html>

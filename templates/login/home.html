@@ -7,13 +7,17 @@
     
     <title>Funcionario </title>
 </head>
+
 {% if request.session.usuario %}
-<h1>Bienvenido {{request.session.usuario}}</h1> &nbsp;&nbsp <a href="{% url 'logging' %}">Cerrar sesion</a>
+<h1>Bienvenido {{request.session.usuario}}</h1> &nbsp;&nbsp
+<a href="{% url 'adduser' %}">Agregar Usuario</a>
+<a href="{% url 'logging' %}">Cerrar sesion</a>
+
 {% else %}
 <body>
     
-    <a href="login/login.html"">Login</a> <!--referencia al 'name' del urls -->
-
+     <a href="login/login.html">Login</a> <!--referencia al 'name' del urls -->
+    
 </body>
 {% endif %}
 </html>
